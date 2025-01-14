@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173',  // Allow requests from localhost:5173
+  origin: ['http://localhost:5173','https://chiccart.onrender.com'],  // Allow requests from localhost:5173
   methods: ['GET', 'POST'],        // Allow specific methods
   allowedHeaders: ['Content-Type'], // Allow specific headers
 }));
